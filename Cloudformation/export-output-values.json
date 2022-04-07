@@ -1,0 +1,12 @@
+"Outputs": {
+    "VPCID": {
+        "Description": "VPC ID",
+        "Value": {
+            "Ref": "PublicVPC"
+        },
+        "Export": {
+            "Name": {
+                "Fn::Sub": "${AWS::StackName}-VPCID"
+            }
+        }
+    },

@@ -1,0 +1,8 @@
+"ALBTargetGroup": {
+    "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
+    "Properties": {
+        "VpcId": {
+            "Fn::ImportValue": {
+                "Fn::Sub": "${NetworkStackName}-VPCID"
+            }
+        },
